@@ -16,8 +16,8 @@
 
 ## BeepBoop Specs
 
-| Behaviors       | Input           | Output      |
-| ---------------- |:-----------------:| :-----------:|
+| Behaviors       | Input          | Output      |
+| ---------------- |:------------:| :--------------:|
 | The program returns a range of numbers from 0 to the users inputted number, with some exeptions | 4 | 0, Beep! , Boop! , I'm sorry , Dave. I'm afraid I can't do that. ,4  |
 | For numbers containing "1", the program replaces all digits with "Beep!" | 1 | 0 , Beep! |
 | For numbers containing "2", the program replaces all digits with "Boop!" | 2 | 0 , Beep! , Boop! |
@@ -28,4 +28,6 @@
 | When "Normal Mode" is selected, the numbers will display from 0 to the largest numer | 5 | 0 , Beep! , Boop! , I'm sorry , Dave. I'm afraid I can't do that. , 4, 5 |
 | When "Spooky Mode" is selected, the numbers will display from the largest numer to 0 | 5 | 5, 4, I'm sorry , Dave. I'm afraid I can't do that., Boop! , Beep! , 0 |
 
+## Additional Features
+* When the user selects "Spooky Mode," the color shceme becomes dark.
 

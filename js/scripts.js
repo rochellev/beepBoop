@@ -1,9 +1,9 @@
 var inputNum = 0;
 var mode = "";
 var displayArray = [];
-var daveString = " I'm sorry, Dave. I'm afraid I can't do that.";
-var beepString = " Beep!";
-var boopString = " Boop!";
+var daveString = " I'm sorry, Dave. I'm afraid I can't do that. ";
+var beepString = " Beep! ";
+var boopString = " Boop! ";
 
 
 // return true if number contains digit, false otherwise
@@ -52,8 +52,10 @@ $(function(){
 
       if(mode == "normal"){
         $("#outputB").text(displayArray);
+        document.documentElement.setAttribute('data-theme', 'light');
       }else {
           var reversedDisplay = displayArray.reverse();
+          document.documentElement.setAttribute('data-theme', 'spooky');
           $("#outputB").text(reversedDisplay);
       }
 

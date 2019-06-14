@@ -1,3 +1,26 @@
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+[data-theme="spooky"] {
+    --primary-color: #582323;
+    --secondary-color: #AC7575;
+    --font-color: rgb(143, 121, 121);
+    --bg-color:  #200000;
+    --heading-color: #818cab;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
 #output {
     display: none;
+    font-size: 20pt;
 }
+
