@@ -1,8 +1,8 @@
 var inputNum = 0;
 var displayArray = [];
-var daveString = "I'm sorry, Dave. I'm afraid I can't do that.";
-var beepString = "Beep!";
-var boopString = "Boop!";
+var daveString = " I'm sorry, Dave. I'm afraid I can't do that.";
+var beepString = " Beep!";
+var boopString = " Boop!";
 
 
 // return true if number contains digit, false otherwise
@@ -34,7 +34,7 @@ var createNumArray = function(endNum){
         }else if(containsDigit(i, 1)){
             numArray[i] = beepString;
         }else{
-            numArray[i] = i;
+            numArray[i] = " " + i;
         }
     }
     return numArray;
@@ -46,19 +46,14 @@ $(function(){
       
       inputNum = parseInt($("input#inputNumber").val());
       displayArray = createNumArray(inputNum);
-      alert(displayArray);
   
     // var test = containsDigit(inputNum, 1);
     // alert("test if input of " + inputNum + " contains the number 1, result is " + test );
 
-     
-    
-      
-    //   // alert(string);
-    //    $("#outputA").text(string);
-    //    $("#outputB").text(newString);
+       $("#outputA").text(inputNum);
+       $("#outputB").text(displayArray);
    
-    //   $("#output").show();
+      $("#output").show();
    
    
     });
