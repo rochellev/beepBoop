@@ -47,14 +47,20 @@ $(function(){
       
       inputNum = parseInt($("input#inputNumber").val());
       mode = $("input:radio[name=modes]:checked").val();
-      console.log("the mode is: " + mode);
+      //console.log("the mode is: " + mode);
       displayArray = createNumArray(inputNum);
+
+      if(mode == "normal"){
+        $("#outputB").text(displayArray);
+      }else {
+          var reversedDisplay = displayArray.reverse();
+          $("#outputB").text(reversedDisplay);
+      }
+
   
-    // var test = containsDigit(inputNum, 1);
-    // alert("test if input of " + inputNum + " contains the number 1, result is " + test );
 
        $("#outputA").text(inputNum);
-       $("#outputB").text(displayArray);
+       
    
       $("#output").show();
    
