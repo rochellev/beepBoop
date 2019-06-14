@@ -1,4 +1,5 @@
 var inputNum = 0;
+var mode = "";
 var displayArray = [];
 var daveString = " I'm sorry, Dave. I'm afraid I can't do that.";
 var beepString = " Beep!";
@@ -45,6 +46,8 @@ $(function(){
       event.preventDefault();
       
       inputNum = parseInt($("input#inputNumber").val());
+      mode = $("input:radio[name=modes]:checked").val();
+      console.log("the mode is: " + mode);
       displayArray = createNumArray(inputNum);
   
     // var test = containsDigit(inputNum, 1);
