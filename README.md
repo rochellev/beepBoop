@@ -17,7 +17,7 @@
 ## BeepBoop Specs
 
 | Behaviors       | Input           | Output      |
-| ------------- |:-----------------:| :-----------:|
+| ------------- |:-----------------:| -----------:|
 | The program returns a range of numbers from 0 to the users inputted number, with some exeptions | 4 | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4  |
 | For numbers containing "1", the program replaces all digits with "Beep!" | 1 | 0, Beep! |
 | For numbers containing "2", the program replaces all digits with "Boop!" | 2 | 0, Beep!, Boop! |
