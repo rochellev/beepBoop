@@ -1,22 +1,20 @@
 var inputNum = 0;
 var displayArray = [];
 var specials = [1,2,3];
+var daveString = "I'm sorry, Dave. I'm afraid I can't do that."
 
 
-// return true if digit is in number, false otherwise
+// return true if number contains digit, false otherwise
 var containsDigit = function(number, digit){
-    debugger;
     while(number != 0){
         var currentDigit = number % 10;
         if (currentDigit === digit) {
             return true;
         }else{
-            // to get an integer not floating point
+            // round down to get an integer
             number = Math.floor(number/10);
         }
-
     }
-
     return false;
 
 }
@@ -26,11 +24,12 @@ var createNumArray = function(endNum){
     var numArray= [];
     for(i= 0; i < endNum + 1; i++ ){
         // check if need to apply rules
-        if(!specials.includes(i)){
-            numArray[i]= i;
-        }else if(i){
-            
+       if(containsDigit(i, 3)){
+           // apply rule
+           numArray[i] = daveString; 
 
+        }else{
+            numArray[i] = i;
         }
     }
     return numArray;
@@ -40,13 +39,12 @@ $(function(){
     $("form").submit(function(event){
       event.preventDefault();
       
-      //get user input
       inputNum = parseInt($("input#inputNumber").val());
-    //   displayArray = createNumArray(inputNum);
-    //   alert(displayArray);
+      displayArray = createNumArray(inputNum);
+      alert(displayArray);
   
-    var test = containsDigit(inputNum, 1);
-    alert("test if input of " + inputNum + " contains the number 1, result is " + test );
+    // var test = containsDigit(inputNum, 1);
+    // alert("test if input of " + inputNum + " contains the number 1, result is " + test );
 
      
     
