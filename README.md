@@ -29,5 +29,12 @@
 | When "Spooky Mode" is selected, the numbers will display from the largest numer to 0 | 5 | 5, 4, I'm sorry , Dave. I'm afraid I can't do that., Boop! , Beep! , 0 |
 
 ## Additional Features
-* When the user selects "Spooky Mode," the color shceme becomes dark.
+* Spooky Mode
+    * Background, text color and font change to a more "spooky" red
+    * Custom font, *Vermillion*, downloaded. [^1]
+    * Toggle Button to switch between Spooky and Normal Mode
+
+
+
+    [^1] The creater of *Vermillion* allows free personal use. They can be contacted at: *asap.rendi16@gmail.com*
 

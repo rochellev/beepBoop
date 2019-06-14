@@ -1,9 +1,15 @@
+@font-face {
+    font-family: Vermillion;
+    src: url(Vermillion.ttf);
+}
+
 :root {
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #292922;
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 [data-theme="spooky"] {
@@ -12,15 +18,21 @@
     --font-color: rgb(143, 121, 121);
     --bg-color:  #200000;
     --heading-color: #818cab;
+    --font-family: Vermillion;
 }
+
+
 
 body {
     background-color: var(--bg-color);
     color: var(--font-color);
+    font-family: var(--font-family);
 }
 
 #output {
     display: none;
-    font-size: 20pt;
 }
 
+.displayOutput {
+    font-size: 14pt;
+}
