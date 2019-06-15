@@ -31,13 +31,15 @@
 ## Additional Features
 * Spooky Mode
     * Background, text color and font change to a more "spooky" red
-    * Custom Spooky font, *Vermillion*, downloaded. [^1]
+    * Custom Spooky font, *Vermillion*, downloaded. [1]
     * Toggle Button to switch between Spooky and Normal Mode
 * Implementing more Complex CSS
     * Linking downoaled font to project
     * Various small style toggling
+* Diplay what user input with results
+* [GitHub Pages Link](https://rochellev.github.io/beepBoop/)
 
 
 
-    [^1] The creater of *Vermillion* allows free personal use. They can be contacted at: *asap.rendi16@gmail.com*
+    [1] The creater of *Vermillion* allows free personal use. They can be contacted at: *asap.rendi16@gmail.com*
 
