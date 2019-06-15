@@ -31,8 +31,11 @@
 ## Additional Features
 * Spooky Mode
     * Background, text color and font change to a more "spooky" red
-    * Custom font, *Vermillion*, downloaded. [^1]
+    * Custom Spooky font, *Vermillion*, downloaded. [^1]
     * Toggle Button to switch between Spooky and Normal Mode
+* Implementing more Complex CSS
+    * Linking downoaled font to project
+    * Various small style toggling
 
 
 
