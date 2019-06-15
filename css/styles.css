@@ -4,17 +4,19 @@
 }
 
 :root {
-    --primary-color: #302AE6;
-    --secondary-color: #536390;
+    --primary-color: #479030;
+    --secondary-color: #70B45A;
+    --secondary-color2: rgb(145, 185, 131);
     --font-color: #424242;
-    --bg-color: #fff;
+    --bg-color: #A2D890;
     --heading-color: #292922;
     --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 [data-theme="spooky"] {
     --primary-color: #582323;
-    --secondary-color: #AC7575;
+    --secondary-color:  rgb(85, 49, 49);
+    --secondary-color2: rgb(100, 57, 57);
     --font-color: rgb(143, 121, 121);
     --bg-color:  #200000;
     --heading-color: #818cab;
@@ -34,5 +36,21 @@ body {
 }
 
 .displayOutput {
-    font-size: 14pt;
+    font-size: 16pt;
+}
+
+.numberDisplay1 {
+    background-color: var(--secondary-color);
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 30px;
+    text-align: center;
+}
+
+.numberDisplay2 {
+    background-color: var(--secondary-color2);
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 30px;
+    text-align: center;
 }
